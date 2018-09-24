@@ -1,0 +1,101 @@
+<html style='user-select: none;'>
+<head>
+<script src="jquery-3.3.1.slim.min.js"></script>
+<script src="main.js"></script>
+<script>
+$(document).ready(function(){
+$(".starttest").click(function(){
+//window.location.href  = "./index.html";
+window.location.href = "http://localhost:8080/test/scripts/index.html";
+});
+});
+
+
+
+</script>
+
+<style>
+@font-face{font-family:arial;}
+
+*{-webkit-font-smoothing:antialiased;margin:0;box-sizing:border-box;font-family:arial!important; font-size:15px;}
+
+.questionbox{
+    width: 600px;
+	padding-left: 30px;
+    margin-top: 100px;
+	padding-top:25px;
+	padding-right: 30px;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 410px;
+}
+
+
+.card{
+	background: white;
+	border-radius: 4px;
+    box-shadow: 0px 2px 10px #0000009e;
+}
+
+	
+	
+	body{
+	    background: url(images/bg.jpg);
+    background-size: cover;
+	}
+	
+.logo{
+    background: url(images/suventure.png);
+    background-size: contain;
+    height: 76px;
+    background-repeat: no-repeat;
+}
+.starttest{
+background: white;
+color:black;
+    height: 32px;
+    width: 90px;
+    text-align: center;
+    line-height: 32px;
+	cursor: pointer;
+	float: right;
+	transition: all 250ms;
+	}
+	
+	.starttest:hover{
+	background: #0089ff;
+	color:white;
+    transition: all 250ms;
+	}
+</style>
+</head>
+
+
+<body>
+<div class="questionbox card">
+<div class='logo'></div><br>
+<span style='font-weight: 700;'>Welcome Dear Candidate</span><br>
+<br>
+Please read the instructions below before starting your test:<br><br>
+
+1. This test comprises of multiple choice questions (MCQs), each question having 4 options out of which only one is correct. <br>
+2. Each question has a time limit which will be mentioned above each question.<br>
+3. Each question carries 1 mark for the correct answer. There will be zero marks rewarded for incorrect and unattempted questions.<br> 
+4. You cannot move to the next question before answering the previous question.<br><br>
+
+All the best for your test. <br>
+We wish you succeed.<br>
+<br>
+<span style='font-weight: 700;font-style: italic;'>Team Suventure</span>
+<br><br><br>
+<div class="starttest card">
+Start Test
+</div>
+</div>
+
+</body>
+</html>
